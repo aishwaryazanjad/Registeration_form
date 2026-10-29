@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login and Registration</title>
+    <link rel="stylesheet" href="Instagram-style login page.css">
+</head>
+<body>
+
+    <!-- Instagram Login Section -->
+    <section class="instagram-section">
+
+        <div class="instagram-left">
+            <div class="instagram-logo">◎</div>
+
+            <h2>
+                See everyday moments from<br>
+                your <span>close friends.</span>
+            </h2>
+
+            <div class="photo-collage">
+                <img
+                    src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=250"
+                    alt="Lifestyle portrait">
+                <img
+                    src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=250"
+                    alt="Fashion portrait">
+                <img
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=250"
+                    alt="Portrait of a woman">
+            </div>
+
+            <p class="app-store">App Store</p>
+        </div>
+
+        <div class="instagram-right">
+            <form class="login-form" id="loginForm">
+                <p>Log into Instagram</p>
+
+                <input
+                    type="text"
+                    placeholder="Mobile number, username or email"
+                    required>
+
+                <input
+                    type="password"
+                    placeholder="Password"
+                    required>
+
+                <button type="submit" class="login-btn">Log in</button>
+
+                <a href="#" class="forgot-link">Forgot password?</a>
+
+                <button type="button" class="facebook-btn">
+                    <span>f</span> Log in with Facebook
+                </button>
+
+                <button type="button" class="create-btn">
+                    Create new account
+                </button>
+
+                <p id="loginMessage" class="message"></p>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Registration Form Section -->
+    <section class="registration-section">
+
+        <form class="registration-form" id="registrationForm">
+            <h2>Registration</h2>
+
+            <p class="form-heading">Personal Details</p>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input id="fullName" type="text" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input id="dob" type="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile number</label>
+                    <input id="mobile" type="tel" placeholder="Enter mobile number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" required>
+                        <option value="">Select gender</option>
+                        <option>Female</option>
+                        <option>Male</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="occupation">Occupation</label>
+                    <input id="occupation" type="text" placeholder="Enter occupation" required>
+                </div>
+            </div>
+
+            <p class="form-heading">Identity Details</p>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="idType">ID Type</label>
+                    <select id="idType" required>
+                        <option value="">Enter ID type</option>
+                        <option>Aadhaar Card</option>
+                        <option>Passport</option>
+                        <option>Driving Licence</option>
+                        <option>Voter ID</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="idNumber">ID Number</label>
+                    <input id="idNumber" type="text" placeholder="Enter ID number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="authority">Issue Authority</label>
+                    <input id="authority" type="text" placeholder="Enter issue department" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="issueDate">Issue Date</label>
+                    <input id="issueDate" type="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="issueState">Issue State</label>
+                    <input id="issueState" type="text" placeholder="Enter ID issue state" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="expiryDate">Expiry Date</label>
+                    <input id="expiryDate" type="date">
+                </div>
+            </div>
+
+            <button type="submit" class="next-btn">Next →</button>
+
+            <p id="registrationMessage" class="registration-message"></p>
+        </form>
+
+    </section>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("loginMessage").textContent =
+                "Demo only: login is not connected to a server.";
+        });
+
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("registrationMessage").textContent =
+                "Details validated for this demo. No information has been submitted.";
+        });
+    </script>
+
+</body>
+</html>

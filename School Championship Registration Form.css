@@ -1,0 +1,194 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    padding: 30px 20px;
+    color: #66677c;
+}
+
+.registration-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 35px 15px;
+    background: linear-gradient(
+        160deg,
+        #e5a5f4 0%,
+        #c8c9fa 32%,
+        #a0f8f4 100%
+    );
+    border-top: 2px solid #555;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #66617f;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label,
+.verification-title {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 9px;
+    color: #686b80;
+}
+
+.form-group label span,
+.verification-title span {
+    color: #e23c65;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    height: 43px;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #e0e0e5;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group input:focus {
+    border-color: #5479e8;
+    box-shadow: 0 0 3px #5479e8;
+}
+
+.form-group input::placeholder {
+    color: #a3a3aa;
+}
+
+.name-fields {
+    display: flex;
+    gap: 12px;
+}
+
+.name-fields input {
+    flex: 1;
+    min-width: 0;
+}
+
+.verification {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.verification-title {
+    margin-bottom: 10px;
+}
+
+.captcha-box {
+    width: 300px;
+    min-height: 80px;
+    margin: 0 auto;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fafafa;
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px #00000015;
+    text-align: left;
+    color: #333;
+    cursor: pointer;
+}
+
+.captcha-box input {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.captcha-box > span {
+    font-size: 13px;
+    flex: 1;
+}
+
+.captcha-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    color: #777;
+}
+
+.captcha-logo span {
+    font-size: 24px;
+}
+
+.captcha-logo small {
+    font-size: 9px;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.submit-container button {
+    width: 155px;
+    padding: 14px;
+    background: #1453c5;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-container button:hover {
+    background: #0d3e9d;
+}
+
+#message {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 13px;
+    color: #1453c5;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .registration-container {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+        line-height: 1.3;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .name-fields {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .captcha-box {
+        width: 100%;
+        max-width: 300px;
+    }
+}

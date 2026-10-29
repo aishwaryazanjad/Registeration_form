@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <p class="assignment-title">Form assignment</p>
+
+    <div class="register-container">
+        <h1>Register</h1>
+
+        <p class="description">
+            Kindly fill in this form to register.
+        </p>
+
+        <form>
+            <label for="username">Username</label>
+            <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter username"
+                required
+            >
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Email"
+                required
+            >
+
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter Password"
+                required
+            >
+
+            <label for="repeat-password">Repeat Password</label>
+            <input
+                type="password"
+                id="repeat-password"
+                name="repeat-password"
+                placeholder="Repeat Password"
+                required
+            >
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p class="login-text">
+            Already have an account?
+            <a href="#">Log in</a>.
+        </p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #777777;
+}
+
+.registration-card {
+    width: 330px;
+    padding: 10px 28px 35px;
+    background: #ededed;
+    border-radius: 9px;
+    box-shadow: 0 1px 6px #00000040;
+}
+
+h1 {
+    text-align: center;
+    font-size: 29px;
+    font-weight: 400;
+    padding: 0 0 10px;
+    border-bottom: 2px solid #e3e3e3;
+    margin-bottom: 20px;
+}
+
+.account-type {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-bottom: 17px;
+    border-bottom: 2px solid #e3e3e3;
+    margin-bottom: 20px;
+}
+
+.account-type label,
+.gender-options label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.account-type input,
+.gender-options input {
+    display: none;
+}
+
+.custom-radio {
+    width: 19px;
+    height: 19px;
+    background: #405eb4;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+input[type="radio"]:checked + .custom-radio::after {
+    content: "✓";
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+    height: 38px;
+    margin-bottom: 13px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 5px #00000020;
+}
+
+.input-icon {
+    width: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #405eb4;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.input-group input {
+    width: 100%;
+    min-width: 0;
+    padding: 0 11px;
+    border: 1px solid #dddddd;
+    outline: none;
+    background: white;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #405eb4;
+}
+
+.input-group input::placeholder {
+    color: #929292;
+}
+
+.gender-options {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin: 25px 0 35px;
+}
+
+.form-footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-footer p {
+    flex: 1;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.form-footer a {
+    color: #405eb4;
+}
+
+.form-footer button {
+    padding: 10px 20px;
+    background: #405eb4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px #00000025;
+}
+
+.form-footer button:hover {
+    background: #304b98;
+}
+
+#message {
+    font-size: 11px;
+    margin-top: 12px;
+    color: #405eb4;
+}
+
+@media (max-width: 380px) {
+    .registration-card {
+        width: 92%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
